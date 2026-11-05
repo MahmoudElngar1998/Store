@@ -1,15 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-// import { useEffect } from "react";
-// import { useCart } from "../Store";
 
 export default function MainLayout() {
-  // const { calcTotal, items } = useCart();
+  const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   calcTotal();
-  // }, [items]);
+  useEffect(() => {
+    let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+    if (!token) {
+      navigate("/login");
+    }
+  });
+
   return (
     <div className=" flex flex-col items-center">
       <Header />
