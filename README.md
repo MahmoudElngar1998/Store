@@ -1,16 +1,25 @@
-# React + Vite
+# Cyber Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce front-end built with React. It displays products from a Strapi backend, with product details, a shopping cart, and user login and registration.
 
-Currently, two official plugins are available:
+## Features
+- Home page with product cards
+- Product details page
+- Shopping cart
+- Register and login with JWT authentication
+- Form validation and toast notifications
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+React, Vite, Tailwind CSS, DaisyUI, React Router, Zustand, Formik, Yup, Axios, React Hot Toast, Strapi (backend)
 
-## React Compiler
+## Screenshots
+[صور شاشة هنا]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
+1. Clone the repo
+2. Run `npm install`
+3. Start the Strapi backend on `http://localhost:1337`
+4. Run `npm run dev`
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notes
+The backend runs locally with Strapi and is not deployed, so the project needs it running to show data.
